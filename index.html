@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<style>
+	/* body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Montserrat", sans-serif
+  } */
+	::-webkit-scrollbar {
+		width: 10px;
+	}
+
+	/* Track */
+	::-webkit-scrollbar-track {
+		background: #f1f1f1;
+	}
+
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+		background: #888;
+	}
+
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+		background: #555;
+	}
+
+	html {
+		scroll-behavior: smooth;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: "Oswald"
+	}
+
+	body {
+		font-family: "Open Sans"
+	}
+
+	.w3-row-padding img {
+		margin-bottom: 12px
+	}
+
+	/* Set the width of the sidebar to 120px */
+	.w3-sidebar {
+		width: 120px;
+		background: #222;
+	}
+
+	/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+	#main {
+		margin-left: 120px
+	}
+
+	/* Remove margins from "page content" on small screens */
+	@media only screen and (max-width: 600px) {
+		#main {
+			margin-left: 0
+		}
+	}
+
+	.na {
+		border-radius: 0px 10px 10px 0px;
+	}
+
+	.top-nav,
+	.top-nav:hover {
+		border-radius: 20px;
+	}
+</style>
+
+<body class="w3-white">
+
+
+
+
+	
+
+
+
+
+
+	<!-- Icon Bar (Sidebar - hidden on small screens) -->
+	<nav class="w3-sidebar w3-border-right w3-bar-block w3-small w3-hide-small w3-white w3-center" style="padding-top: 9%;">
+		<!-- Avatar image in top left corner -->
+		<a href="#" class="w3-bar-item na w3-button w3-padding w3-hover-green">
+			<i class="fa fa-home w3-xxlarge"></i>
+
+			<p style="margin: 5px; margin-left: 0;  font-family: Montserrat; font-weight: 700;">HOME</p>
+		</a>
+		<a href="#about" class="w3-bar-item na w3-button w3-padding w3-hover-red">
+			<i class="fa fa-user w3-xxlarge"></i>
+			<p style="margin: 5px; margin-left: 0;  font-family: Montserrat; font-weight: 700;">ABOUT</p>
+		</a>
+		<a href="#education" class="w3-bar-item na w3-button w3-padding w3-hover-blue">
+			<i class="fa fa-envelope w3-xxlarge"></i>
+			<p style="margin: 5px; margin-left: 0;  font-family: Montserrat; font-weight: 700;">EDUCATION</p>
+		</a>
+		<a href="#skills" class="w3-bar-item na w3-button w3-padding w3-hover-yellow">
+			<i class="fa fa-eye w3-xxlarge"></i>
+			<p style="margin: 5px; margin-left: 0;  font-family: Montserrat; font-weight: 700;">SKILLS</p>
+		</a>
+		<a href="#work" class="w3-bar-item na w3-button w3-padding w3-hover-pink">
+			<i class="fa fa-eye w3-xxlarge"></i>
+			<p style="margin: 5px; margin-left: 0;  font-family: Montserrat; font-weight: 700;">WORK</p>
+		</a>
+		<a href="#contact" class="w3-bar-item na w3-button w3-padding w3-hover-blue">
+			<i class="fa fa-envelope w3-xxlarge"></i>
+			<p style="margin: 5px; margin-left: 0;  font-family: Montserrat; font-weight: 700;">CONTACT</p>
+		</a>
+
+	</nav>
+
+
+
+
+
+
+
+
+	<!-- Navbar on small screens (Hidden on medium and large screens) -->
+	<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+		<div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+			<a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+			<a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+			<a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">SKILLS</a>
+			<a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+	<!-- Page Content -->
+	<div class="w3-padding-large" id="main">
+		<div class="w3-bar w3-white w3-hide-small w3-row">
+			<div class="w3-container w3-margin-left">
+				<div class="w3-col m1 l1 top-nav w3-hover-yellow">
+					<a href="https://github.com/savagecarol" class="w3-bar-item top-nav w3-button w3-hover-yellow" style="padding-left: 45%;"><i
+							class="fa fa-github"></i></a>
+				</div>
+				<div class="w3-col m1 l1 top-nav w3-hover-blue">
+					<a href="https://www.linkedin.com/in/savagecarol/" class="w3-bar-item top-nav w3-button w3-hover-blue " style="padding-left: 45%;"><i
+							class="fa fa-linkedin"></i></a>
+				</div>
+				<div class="w3-col m1 l1 top-nav w3-hover-red">
+					<a href="https://auth.geeksforgeeks.org/user/karthiksharma1411/practice/" class="w3-bar-item top-nav w3-button w3-hover-red " style="padding-left: 45%;">
+						<img src="/asset/gfg.png" style="width:20px">
+					</a>
+				</div>
+				<div class="w3-col m1 l1 top-nav w3-hover-yellow">
+					<a href="https://twitter.com/_savage_carol_" class="w3-bar-item top-nav w3-button w3-hover-yellow " style="padding-left: 45%;"><i
+							class="fa fa-twitter"></i></a>
+				</div>
+				<div class="w3-col m1 l1 top-nav w3-hover-green">
+					<a href="https://dev.to/savagecarol" class="w3-bar-item top-nav w3-button w3-hover-green " style="padding-left: 40%;"><img
+							src="/asset/dev.png" style="width:20px"></a>
+				</div>
+				<div class="w3-col m1 l1 top-nav w3-hover-blue">
+					<a href="https://devpost.com/savagecarol?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" class="w3-bar-item top-nav w3-button w3-hover-blue " style="padding-left: 40%;"><img
+							src="/asset/devpost.png" style="width:20px"></a>
+				</div>
+				<div class="w3-col m1 l1 top-nav w3-hover-red">
+					<a href="https://www.hackerrank.com/_savage_carol_" class="w3-bar-item top-nav w3-button w3-hover-red " style="padding-left: 40%;"><img
+							src="/asset/hk.png" style="width:20px"></a>
+				</div>
+				<div class="w3-col m1 l1 top-nav w3-hover-yellow">
+					<a href="https://www.codechef.com/users/savage_carol_" class="w3-bar-item top-nav w3-button w3-hover-yellow" style="padding-left: 40%;"><img
+							src="/asset/codechef (2).png" style="width:20px"></a>
+				</div>
+				<div class="w3-col m1 l1 top-nav w3-hover-green">
+					<a href="https://codeforces.com/profile/_savage-carol_" class="w3-bar-item top-nav w3-button w3-hover-green" style="padding-left: 40%;"><img
+							src="/asset/codeforces.png" style="width:20px"></a>
+				</div>
+				<div class="w3-col m1 l1 top-nav w3-hover-aqua">
+					<a href="https://medium.com/@karthiksharma1411" class="w3-bar-item top-nav w3-button w3-hover-aqua" style="padding-left: 40%;">
+						<img
+							src="/asset/medium.png" style="width:20px"></a>
+				</div>
+				<a href="https://drive.google.com/file/d/15k79JPehghf37CltXQM-tIQQGUAGNoO4/view?usp=sharing" class=" w3-text-dark-gray w3-bar-item top-nav w3-button w3-hover-pink w3-right"
+					style=" font-family: Montserrat; font-weight: 700;">Resume</a>
+			</div>
+		</div>
+
+	
+
+
+
+
+		<!-- Header/Home -->
+		<header class="w3-container w3-center w3-white" style="box-sizing: border-box; height: 100vh; padding-top: 6%;"
+			id="home">
+			<div class="w3-row w3-center">
+				<div class="w3-col s12 m6 l6" style="height: 400px;">
+					<h1 class="w3-jumbo" style="font-family: Montserrat; padding-top: 20%;">Kartikeya Sharma</h1>
+					<h3 class="" style="font-family: Montserrat;">@savagecarol</h3>
+				</div>
+				<div class="w3-col s12 m6 l6">
+					<img src="asset/my.jpg" alt="boy" class="w3-image w3-circle"
+						width="450" height="450">
+				</div>
+			</div>
+		</header>
+
+
+
+
+
+
+
+
+
+		<!-- About Section -->
+		<div class="w3-padding-64 w3-content" id="about">
+			<h2 class="w3-text-black "
+				style="font-family: Montserrat; font-weight: 700; font-size: xx-large;">
+				About Me</h2>
+			<hr style="width:200px" class="w3-opacity">
+			<p style="font-family: Montserrat; font-weight: 500; font-size: medium">
+				🎓 I’m a Mobile Developer enthusiast & a junior pursuing my Bachelors in Computer Science & Engineering .
+				<br> 
+				👨‍💻 I am passionate about Data Structure, Web Dev, Machine Learning, & I enjoy learning new things.
+				<br>
+				🔭 I’m currently contributing in opensource.
+				<br>
+				🌱 I’m currently learning machine learning, data Structure.
+				<br>
+				💬 Ask me about Flutter.
+				
+			</p>
+
+
+
+		
+
+
+			<h3 class="w3-padding-32 w3-text-black"
+				style="font-family: Montserrat; font-weight: 700; font-size: xx-large;">
+				Tags
+			</h3>
+			<div class="w3-container">
+				<div class="w3-row">
+					<div class="w3-col s12 m12 l12">
+						<p>
+							<button class="w3-button w3-black w3-round"
+								style="margin: 5px; margin-left: 0; font-family: Montserrat; " >Machine Learning enthusiast</button>
+							<button class="w3-button w3-khaki w3-round"
+								style="margin: 5px; margin-left: 0;  font-family: Montserrat;">Programmer</button>
+							<button class="w3-button w3-yellow w3-round"
+								style="margin: 5px; margin-left: 0;  font-family: Montserrat;">Developer</button>
+
+								<button class="w3-button w3-black w3-round"
+								style="margin: 5px; margin-left: 0;  font-family: Montserrat;">Teacher</button>
+
+
+								<button class="w3-button w3-black w3-round"
+								style="margin: 5px; margin-left: 0;  font-family: Montserrat;">Speaker</button>
+
+
+							<button class="w3-button w3-red w3-round" style="margin: 5px; margin-left: 0;  font-family: Montserrat;">YouTuber</button>
+							
+						
+
+							<button class="w3-button w3-khaki w3-round"
+								style="margin: 5px; margin-left: 0;  font-family: Montserrat;">Student</button>
+
+
+								<button class="w3-button w3-red w3-round" style="margin: 5px; margin-left: 0;  font-family: Montserrat;"> Geek</button>
+							
+								<button class="w3-button w3-black w3-round"
+									style="margin: 5px; margin-left: 0;  font-family: Montserrat;">Teacher</button>
+	
+								<button class="w3-button w3-khaki w3-round"
+									style="margin: 5px; margin-left: 0;  font-family: Montserrat;">Student</button>
+	
+						
+
+					
+
+						
+						</p>
+					</div>
+				</div>
+			</div>
+
+
+
+			  
+
+			<div class="w3-padding-64 w3-content" id="education">
+				<h2 class="w3-text-black" style="font-family: Montserrat; font-weight: 700; font-size: xx-large;">
+					Education</h2>
+				<hr style="width:200px" class="w3-opacity">
+
+				<ul>
+					<li class="w3-padding-8">
+						<h2 class="w3-text-black  " style="font-family: Montserrat; font-weight: 600; font-size: medium;">
+							Secondary
+						</h2>
+						<h2 class="w3-text-gray " style="font-family: Montserrat; font-weight: 600; font-size: medium;">
+							St. Paul's Senior Secondary School
+						</h2>
+						<h2 class="w3-text-gray " style="font-family: Montserrat; font-weight: 600; font-size: medium;">
+							2015-1016
+						</h2>
+					</li>
+					<li class="w3-padding-8">
+						<h2 class="w3-text-black  " style="font-family: Montserrat; font-weight: 600; font-size: medium;">
+							Senior Secondary
+						</h2>
+						<h2 class="w3-text-gray " style="font-family: Montserrat; font-weight: 600; font-size: medium;">
+							St. Paul's Senior Secondary School
+						</h2>
+						<h2 class="w3-text-gray " style="font-family: Montserrat; font-weight: 600; font-size: medium;">
+							2017-2018
+						</h2>
+					</li>
+					<li class="w3-padding-8">
+						<h2 class="w3-text-black  " style="font-family: Montserrat; font-weight: 600; font-size: medium;">
+							Bachelors In Computer Science
+						</h2>
+						<h2 class="w3-text-gray " style="font-family: Montserrat; font-weight: 600; font-size: medium;">
+							ABES Engineering College
+						</h2>
+						<h2 class="w3-text-gray " style="font-family: Montserrat; font-weight: 600; font-size: medium;">
+							2018-2022
+						</h2>
+					</li>
+				</ul>
+			</div>
+
+
+
+			<h3 class="w3-padding-64 w3-text-black" id="skills" style="font-family: Montserrat; font-weight: 700; font-size: xx-large;">
+				My Skills
+			</h3>
+			<br>
+
+
+
+
+			
+			<p class="w3-wide w3-text-black" style="font-family: Montserrat; font-weight: 600; font-size: small;">C++
+			</p>
+			<div class="w3-light-gray w3-round-xxlarge">
+				<div class="w3-red w3-round-xxlarge" style="height:14px;width:90%"></div>
+			</div>
+
+
+
+			<p class="w3-wide w3-text-black" style="font-family: Montserrat; font-weight: 600; font-size: small;">FLUTTER
+			</p>
+			<div class="w3-light-gray w3-round-xxlarge">
+				<div class="w3-yellow w3-round-xxlarge" style="height:14px;width:88%"></div>
+			</div>
+
+			<p class="w3-wide w3-text-black" style="font-family: Montserrat; font-weight: 600; font-size: small;">DART
+			</p>
+			<div class="w3-light-gray w3-round-xxlarge">
+				<div class="w3-blue w3-round-xxlarge" style="height:14px;width:55%"></div>
+			</div>
+
+
+			<p class="w3-wide w3-text-black" style="font-family: Montserrat; font-weight: 600; font-size: small;">FIREBASE
+			</p>
+			<div class="w3-light-gray w3-round-xxlarge">
+				<div class="w3-green w3-round-xxlarge" style="height:14px;width:60%"></div>
+			</div>
+
+
+			<p class="w3-wide w3-text-black" style="font-family: Montserrat; font-weight: 600; font-size: small;">DJANGO
+			</p>
+			<div class="w3-light-gray w3-round-xxlarge">
+				<div class="w3-blue w3-round-xxlarge" style="height:14px;width:70%"></div>
+			</div>
+
+
+			<p class="w3-wide w3-text-black" style="font-family: Montserrat; font-weight: 600; font-size: small;">PYTHON
+			</p>
+			<div class="w3-light-gray w3-round-xxlarge">
+				<div class="w3-red w3-round-xxlarge" style="height:14px;width:75%"></div>
+			</div>
+
+
+			<p class="w3-wide w3-text-black" style="font-family: Montserrat; font-weight: 600; font-size: small;">MACHINE LEARNING
+			</p>
+			<div class="w3-light-gray w3-round-xxlarge">
+				<div class="w3-red w3-round-xxlarge" style="height:14px;width:50%"></div>
+			</div>
+
+					
+			<p class="w3-wide w3-text-black" style="font-family: Montserrat; font-weight: 600; font-size: small;">JAVA
+			</p>
+			<div class="w3-light-gray w3-round-xxlarge">
+				<div class="w3-red w3-round-xxlarge" style="height:14px;width:55%"></div>
+			</div>
+
+
+			<p class="w3-wide w3-text-black" style="font-family: Montserrat; font-weight: 600; font-size: small;">SQL
+			</p>
+			<div class="w3-light-gray w3-round-xxlarge">
+				<div class="w3-red w3-round-xxlarge" style="height:14px;width:55%"></div>
+			</div>
+
+			<p class="w3-wide w3-text-black" style="font-family: Montserrat; font-weight: 600; font-size: small;">MONGO DB			</p>
+			<div class="w3-light-gray w3-round-xxlarge">
+				<div class="w3-red w3-round-xxlarge" style="height:14px;width:55%"></div>
+			</div>
+
+			<p class="w3-wide w3-text-black" style="font-family: Montserrat; font-weight: 600; font-size: small;">POSTGRE SQL		</p>
+			<div class="w3-light-gray w3-round-xxlarge">
+				<div class="w3-red w3-round-xxlarge" style="height:14px;width:55%"></div>
+			</div>
+
+
+
+
+
+
+
+			
+
+			<div class="w3-padding-64 w3-content" id="work">
+				<h2 class="w3-text-black" style="font-family: Montserrat; font-weight: 700; font-size: xx-large;">
+					Experience
+				</h2>
+				<hr style="width:200px" class="w3-opacity">
+
+				<ul>
+					<li class="w3-padding-8">
+						<h2 class="w3-text-black  " style="font-family: Montserrat; font-weight: 600; font-size: medium;">
+							Bachelors In Computer Science
+						</h2>
+						<h2 class="w3-text-gray " style="font-family: Montserrat; font-weight: 600; font-size: medium;">
+							ABES Engineering College
+						</h2>
+						<h2 class="w3-text-gray " style="font-family: Montserrat; font-weight: 600; font-size: medium;">
+							2018-2022
+						</h2>
+					</li>
+					<li class="w3-padding-8">
+						<h2 class="w3-text-black  " style="font-family: Montserrat; font-weight: 600; font-size: medium;">
+							Bachelors In Computer Science
+						</h2>
+						<h2 class="w3-text-gray " style="font-family: Montserrat; font-weight: 600; font-size: medium;">
+							ABES Engineering College
+						</h2>
+						<h2 class="w3-text-gray " style="font-family: Montserrat; font-weight: 600; font-size: medium;">
+							2018-2022
+						</h2>
+					</li>
+					<li class="w3-padding-8">
+						<h2 class="w3-text-black  " style="font-family: Montserrat; font-weight: 600; font-size: medium;">
+							Bachelors In Computer Science
+						</h2>
+						<h2 class="w3-text-gray " style="font-family: Montserrat; font-weight: 600; font-size: medium;">
+							ABES Engineering College
+						</h2>
+						<h2 class="w3-text-gray " style="font-family: Montserrat; font-weight: 600; font-size: medium;">
+							2018-2022
+						</h2>
+					</li>
+				</ul>
+			</div>
+
+
+
+				<h2 class="w3-text-black w3-padding-16" id='project'
+					style="font-family: Montserrat; font-weight: 700; font-size: xx-large;"> Projects
+				</h2>
+				<hr style="width:200px" class="w3-opacity">
+
+				<div class="w3-row-padding">
+					<div class="w3-col s12 m6 l4">
+						<div class="w3-white w3-margin">
+							<div class="w3-container w3-padding w3-white">
+								<img src="http://edulicious.herokuapp.com/static/pp.jpg" class="w3-image w3-hover-opacity" alt="Avatar" style="width:100%">
+							</div>
+						</div>
+					</div>
+					<div class="w3-col s12 m6 l4">
+						<div class="w3-white w3-margin">
+							<div class="w3-container w3-padding w3-white">
+								<img src="http://edulicious.herokuapp.com/static/pp.jpg" class="w3-image w3-hover-opacity" alt="Avatar" style="width:100%">
+							</div>
+						</div>
+					</div>
+					<div class="w3-col s12 m6 l4">
+						<div class="w3-white w3-margin">
+							<div class="w3-container w3-padding w3-white">
+								<img src="http://edulicious.herokuapp.com/static/pp.jpg" class="w3-image w3-hover-opacity" alt="Avatar" style="width:100%">
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+					<div class="w3-padding-64 w3-content" id="photos">
+						<h2 class="w3-text-black" style="font-family: Montserrat; font-weight: 700; font-size: xx-large;">
+							Ceritficates
+						</h2>
+						<hr style="width:200px" class="w3-opacity">
+						<div class="w3-row-padding">
+							<div class="w3-col s12 m6 l4">
+								<div class="w3-white w3-margin">
+									<div class="w3-container w3-padding w3-white">
+										<img src="http://edulicious.herokuapp.com/static/pp.jpg" class="w3-image w3-hover-opacity" alt="Avatar" style="width:100%">
+									</div>
+								</div>
+							</div>
+							<div class="w3-col s12 m6 l4">
+								<div class="w3-white w3-margin">
+									<div class="w3-container w3-padding w3-white">
+										<img src="http://edulicious.herokuapp.com/static/pp.jpg" class="w3-image w3-hover-opacity" alt="Avatar" style="width:100%">
+									</div>
+								</div>
+							</div>
+							<div class="w3-col s12 m6 l4">
+								<div class="w3-white w3-margin">
+									<div class="w3-container w3-padding w3-white">
+										<img src="http://edulicious.herokuapp.com/static/pp.jpg" class="w3-image w3-hover-opacity" alt="Avatar" style="width:100%">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				<div class="w3-padding-32 w3-content w3-text-grey" id="contact">
+					<h2 class="w3-text-black" style="font-family: Montserrat; font-weight: 700; font-size: xx-large;">
+						Contact Me
+					</h2>
+					<hr style="width:200px" class="w3-opacity">
+					<p style="font-family: Montserrat;">Let's get in touch. Send me a message:</p>
+					<script>
+						function sendEmail() { 
+							Email.send({ 
+								Host: "smtp.gmail.com", 
+								Username: "", 
+								Password: "", 
+								To: 'saxenaalankar42@gmail.com', 
+								From: document.querySelector('#email'), 
+								Subject: document.querySelector('#subject'), 
+								Body: document.querySelector('#message'), 
+							}).then(function (message) { 
+								alert("mail sent successfully") 
+							});
+						} 
+					</script>
+					<form method="POST">
+
+						<p><input class="w3-input w3-padding-16 w3-light-gray" type="text" placeholder="Name" required
+								name="Name" style="font-family: Montserrat;"></p>
+						<p><input class="w3-input w3-padding-16 w3-light-gray " type="text" id="email" placeholder="Email" required
+								name="Email" style="font-family: Montserrat;"></p>
+						<p><input class="w3-input w3-padding-16 w3-light-gray" type="text" id="subject" placeholder="Subject"
+								required name="Subject" style="font-family: Montserrat;"></p>
+						<p><input class="w3-input w3-padding-16 w3-light-gray" type="text" id="message" placeholder="Message"
+								required name="Message" style="font-family: Montserrat;"></p>
+						<p>
+						<p><button class="w3-button w3-yellow w3-block"
+								style="font-family: Montserrat; font-weight: 600; font-size: medium;" onclick="sendEmail()" >SEND
+								MESSAGE</button></p>
+						</button>
+						</p>
+					</form>
+
+
+					<h3 class="w3-padding-64 w3-text-black w3-center" id="skills" style="font-family: Montserrat; font-weight: 700; font-size: xx-large;">
+						Salute mi Famila 🚀
+					</h3>
+        </div>
+        
+        
+
+
+</body>
+
+</html>
