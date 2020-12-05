@@ -8,15 +8,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <style>
-	/* body,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: "Montserrat", sans-serif
-  } */
+	
 	::-webkit-scrollbar {
 		width: 10px;
 	}
@@ -109,15 +101,15 @@
 			<p style="margin: 5px; margin-left: 0;  font-family: Montserrat; font-weight: 700;">ABOUT</p>
 		</a>
 		<a href="#education" class="w3-bar-item na w3-button w3-padding w3-hover-blue">
-			<i class="fa fa-envelope w3-xxlarge"></i>
+			<i class="fa fa-list-alt w3-xxlarge"></i>
 			<p style="margin: 5px; margin-left: 0;  font-family: Montserrat; font-weight: 700;">EDUCATION</p>
 		</a>
 		<a href="#skills" class="w3-bar-item na w3-button w3-padding w3-hover-yellow">
-			<i class="fa fa-eye w3-xxlarge"></i>
+			<i class="fa fa-slack w3-xxlarge"></i>
 			<p style="margin: 5px; margin-left: 0;  font-family: Montserrat; font-weight: 700;">SKILLS</p>
 		</a>
 		<a href="#work" class="w3-bar-item na w3-button w3-padding w3-hover-pink">
-			<i class="fa fa-eye w3-xxlarge"></i>
+			<i class="fa fa-fire w3-xxlarge"></i>
 			<p style="margin: 5px; margin-left: 0;  font-family: Montserrat; font-weight: 700;">ExPERIENCE</p>
 		</a>
 		<a href="#project" class="w3-bar-item na w3-button w3-padding w3-hover-blue">
@@ -126,12 +118,12 @@
 		</a>
 
 		<a href="#blog" class="w3-bar-item na w3-button w3-padding w3-hover-blue">
-			<i class="fa fa-envelope w3-xxlarge"></i>
+			<i class="fa fa-mail-forward w3-xxlarge"></i>
 			<p style="margin: 5px; margin-left: 0;  font-family: Montserrat; font-weight: 700;">BLOGS</p>
 		</a>
 
 		<a href="#contact" class="w3-bar-item na w3-button w3-padding w3-hover-blue">
-			<i class="fa fa-envelope w3-xxlarge"></i>
+			<i class="fa fa-cloud w3-xxlarge"></i>
 			<p style="margin: 5px; margin-left: 0;  font-family: Montserrat; font-weight: 700;">CONTACT</p>
 		</a>
 
@@ -550,14 +542,14 @@
 										<div class="w3-col s12 m6 l4">
 											<div class="w3-white w3-margin">
 												<div class="w3-container w3-padding w3-white">
-													<img src="asset/stud eeze png.png" class="w3-image w3-hover-opacity" alt="Avatar" style="width:100%">
+													<a href="https://www.youtube.com/watch?v=zkOKCvhF3Ic&t=12s"><img src="asset/stud eeze png.png" class="w3-image w3-hover-opacity" alt="Avatar"  style="width:400px; height: 250px;"></a>
 												</div>
 											</div>
 										</div>
 										<div class="w3-col s12 m6 l4">
 											<div class="w3-white w3-margin">
 												<div class="w3-container w3-padding w3-white">
-													<img src="asset/ic_launcher.png" class="w3-image w3-hover-opacity" alt="Avatar" style="width:100%">
+													<a href="https://drive.google.com/file/d/1vwngBOmN94ic_LbFMOp9W6nv-wlTShPd/view?usp=sharing"><img src="asset/ic_launcher.png" class="w3-image w3-hover-opacity" alt="Avatar"  style="width:400px; height: 250px;"></a>
 												</div>
 											</div>
 										</div>
@@ -572,16 +564,28 @@
 							BLOGS
 						</h2>
 						<hr style="width:200px" class="w3-opacity">
-						<div class="w3-row-padding">
+						<div class="w3-row-padding" >
 							<div class="w3-col s12 m6 l4">
 								<div class="w3-white w3-margin">
 									<div class="w3-container w3-padding w3-white">
 									<a href="https://karthiksharma1411.medium.com/state-management-e4cc83fc094f">
-										<img src="asset/maxresdefault.jpg" class="w3-image w3-hover-opacity" alt="Avatar" style="width:100%">
+										<img src="asset/maxresdefault.jpg" class="w3-image w3-hover-opacity" alt="Avatar" style="width:400px; height: 200px;">
 									</a>
 									</div>
 								</div>
 							</div>
+
+
+							<div class="w3-col s12 m6 l4">
+								<div class="w3-white w3-margin">
+									<div class="w3-container w3-padding w3-white">
+									<a href="https://karthiksharma1411.medium.com/incognito-c7f7ee77304b">
+										<img src="asset/icg.jpeg" class="w3-image w3-hover-opacity" alt="Avatar" style="width:400px; height: 200px;">
+									</a>
+									</div>
+								</div>
+							</div>
+
 						</div>
 					</div>
 
@@ -602,22 +606,11 @@
 					</h2>
 					<hr style="width:200px" class="w3-opacity">
 					<p style="font-family: Montserrat;">Let's get in touch. Send me a message:</p>
-					<script>
-						function sendEmail() { 
-							Email.send({ 
-								Host: "smtp.gmail.com", 
-								Username: "", 
-								Password: "", 
-								To: 'saxenaalankar42@gmail.com', 
-								From: document.querySelector('#email'), 
-								Subject: document.querySelector('#subject'), 
-								Body: document.querySelector('#message'), 
-							}).then(function (message) { 
-								alert("mail sent successfully") 
-							});
-						} 
-					</script>
-					<form method="POST">
+					
+
+
+
+					<form method="POST" action="https://formspree.io/f/myybdrvl"> 
 
 						<p><input class="w3-input w3-padding-16 w3-light-gray" type="text" placeholder="Name" required
 								name="Name" style="font-family: Montserrat;"></p>
@@ -629,7 +622,7 @@
 								required name="Message" style="font-family: Montserrat;"></p>
 						<p>
 						<p><button class="w3-button w3-black w3-block"
-								style="font-family: Montserrat; font-weight: 600; font-size: medium;" onclick="sendEmail()" >SEND
+								style="font-family: Montserrat; font-weight: 600; font-size: medium;" type="submit" >SEND
 								MESSAGE</button></p>
 						</button>
 						</p>
