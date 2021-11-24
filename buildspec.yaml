@@ -1,9 +1,9 @@
 version: 0.2
 env:
-  LOGIN: prod/sonar:'e93a762185f789a30d1f2b052f3575ba1ea05fbe'
-  HOST: prod/sonar:'https://sonarcloud.io'
-  Organization: prod/sonar:'savagecarol'
-  Project: prod/sonar:'savagecarol.github.io'
+  LOGIN: 'e93a762185f789a30d1f2b052f3575ba1ea05fbe'
+  HOST: 'https://sonarcloud.io'
+  Organization: 'savagecarol'
+  Project: 'savagecarol.github.io'
 phases:
   install:
     runtime-versions:
