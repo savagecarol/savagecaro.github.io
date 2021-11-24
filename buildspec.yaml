@@ -5,9 +5,6 @@ env:
   Organization: 'savagecarol'
   Project: 'savagecarol.github.io'
 phases:
-  install:
-    runtime-versions:
-      java: openjdk8
   pre_build:
     commands:
       - apt-get update
