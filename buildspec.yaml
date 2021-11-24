@@ -8,3 +8,6 @@ phases:
   pre_build:
     commands:
      - echo 'zip'
+artifacts:
+  files:
+    - '**/*'
